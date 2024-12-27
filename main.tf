@@ -8,4 +8,8 @@ module "ec2_instance" {
     instance_type_value = "t2.micro"
 }
 
+module "s3_bucket" {
+  source = "./modules/s3_bucket"
+}
+
 
